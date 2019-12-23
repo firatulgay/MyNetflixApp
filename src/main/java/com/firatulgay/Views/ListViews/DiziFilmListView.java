@@ -10,6 +10,7 @@ import com.firatulgay.dao.DiziFilmDao;
 import com.firatulgay.utils.HibernateUtil;
 import com.vaadin.data.Item;
 import com.vaadin.data.util.IndexedContainer;
+import com.vaadin.data.util.PropertysetItem;
 import com.vaadin.event.ItemClickEvent;
 import com.vaadin.shared.ui.MultiSelectMode;
 import com.vaadin.ui.FormLayout;
@@ -104,6 +105,8 @@ public class DiziFilmListView extends HorizontalLayout {
     }
 
     private void buildTable() {
+
+
         table = new Table();
         table.setContainerDataSource(indexedContainer);
         table.setColumnHeaders("ID", "ADI", "TÜRÜ", "YAPIM YILI", "YÖNETMEN ADI", "BASROL");
