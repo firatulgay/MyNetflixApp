@@ -93,7 +93,6 @@ public class DiziFilmEkle extends VerticalLayout {
 
         if (isFilm) {
 
-
             Film film = new Film();
             if (idFieldValue != null) {
                 film.setId(idFieldValue);
