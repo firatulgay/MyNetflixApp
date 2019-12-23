@@ -16,11 +16,14 @@
         <property name="connection.autocommit">true</property>
         <property name="hbm2ddl.auto">update</property>
 
+        <!-- Hibernate ENVERS Configuration -->
+
+        <property name="org.hibernate.envers.audit_table_suffix">_AUD</property>
+
         <mapping class="com.firatulgay.Domain.Film" />
         <mapping class="com.firatulgay.Domain.Dizi" />
         <mapping class="com.firatulgay.Domain.BasRolOyuncu" />
         <mapping class="com.firatulgay.Domain.DiziFilmBasrol" />
-
 
     </session-factory>
 </hibernate-configuration>
