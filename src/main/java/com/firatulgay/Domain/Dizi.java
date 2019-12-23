@@ -17,12 +17,12 @@ public class Dizi {
     private String adi;
 
     @Column (length = 50)
-    private int yapimYili;
+    private String yapimYili;
 
     @Column (length = 50)
     private String yonetmenAdi;
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     @Column(length = 50)
     private EnumTur enumTur;
 
@@ -46,11 +46,11 @@ public class Dizi {
         this.adi = adi;
     }
 
-    public int getYapimYili() {
+    public String getYapimYili() {
         return yapimYili;
     }
 
-    public void setYapimYili(int yapimYili) {
+    public void setYapimYili(String yapimYili) {
         this.yapimYili = yapimYili;
     }
 
@@ -77,4 +77,5 @@ public class Dizi {
     public void setBasRolOyuncu(BasRolOyuncu basRolOyuncu) {
         this.basRolOyuncu = basRolOyuncu;
     }
+
 }

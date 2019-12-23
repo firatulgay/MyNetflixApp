@@ -42,4 +42,9 @@ public class BasRolOyuncu {
     public void setYas(int yas) {
         this.yas = yas;
     }
+
+    @Override
+    public String toString() {
+        return adi;
+    }
 }
